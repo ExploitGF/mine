@@ -1,4 +1,4 @@
-$n = (Get-WmiObject -class Win32_processor).NumberOfCores
+$n = (Get-WmiObject -class Win32_processor).NumberOfLogicalProcessors
 switch ($n)
 {
         1 {

